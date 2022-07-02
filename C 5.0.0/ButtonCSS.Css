@@ -1,0 +1,81 @@
+:root{
+    --primary : #6750A4;
+    --on-primary : #FFFFFF;
+    --SecondaryC : #E8DEF8;
+    --on-SecondaryC : #1E192B;
+    --Surface : #FFFBFE ;
+    --Outline : #79747E ;
+
+} 
+body{
+--height: 40px;
+--padding: 0 24px;
+--rudios: calc( var(--height) / 2 );
+--align : center;
+--fontsize : 14px;
+--fontfamily : 'Roboto' ;
+}   
+.btn{
+cursor: pointer;
+height: var(--height);
+border-radius: var(--rudios);
+padding: var(--padding);
+text-align: var(--align);
+font-size: var(--fontsize);
+font-weight: 400;
+font-family:  var(--fontfamily); ;
+letter-spacing: 0.1em;
+line-height: calc( var(--height) - 2px );
+
+}
+.btn > *{
+
+vertical-align: middle;
+
+}
+.btn.filled{
+background-color: var(--primary);
+color: var(--on-primary);
+border-color: transparent;
+
+}
+.btn.filled i{
+color: var(--on-primary);
+font-size: 18px;
+padding-right: 8px;
+}
+.btn.filledtonal{
+background-color: var(--SecondaryC);
+color: var(--on-SecondaryC);
+border-color: transparent;
+}
+.btn.filledtonal i{
+color: var(--on-SecondaryC);
+font-size: 18px;
+padding-right: 8px;
+}
+.btn.Outlined{
+background-color: var(--Surface);
+color: var(--primary);
+border-color: var(--Outline);
+
+}
+.btn.Outlined i{
+color: var(--primary);
+font-size: 18px;
+padding-right: 8px;
+
+}
+.btn.text{
+background-color: var(--on-primary);
+color: var(--primary);
+border: none ;
+
+
+}
+.btn.text i{
+color: var(--primary);
+font-size: 18px;
+padding-right: 8px;
+padding-left: 3px;
+}
