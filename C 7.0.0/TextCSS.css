@@ -1,0 +1,33 @@
+
+:root{
+    --on-surface-border: rgb(0, 0, 0,0.12);
+    --on-surface-lable:#9b9b9b;
+    --on-surface-input:rgb(0, 0, 0,0.66);
+}
+
+ .form_group input{
+    border: none;
+    outline: 0;
+    color: var(--on-surface-lable);
+ } 
+ .form_group{
+     border: 1px solid var(--on-surface-border);
+     border-radius: 4px;
+     Line-height: 48px;
+     width: 240px;
+ }
+ 
+  .form_group i{
+      margin: 0px -2px 0px 8px;
+      padding: -12px;
+      vertical-align: middle;
+      color: var(--on-surface-lable);
+  }
+.help{
+ position: absolute;
+  top: 50px;
+  display: block;
+  font-size:14px;
+  color: var(--on-surface-lable);
+  margin: 0px -2px 0px 8px;
+}
