@@ -1,0 +1,119 @@
+:root{
+    --primary : #6750A4;
+    --on-primary : #ffffff;
+    --SecondaryC : #E8DEF8;
+    --on-SecondaryC : #1E192B;
+    --Surface : rgb(231, 224, 236,0.50);
+    --on-surface: #1C1B1F;
+    --Outline : #85746b ;
+    --Surfacevariant : #e7e0ec;
+    --height: 40px;
+    --padding: 0px 16px;
+    --rudios: calc( var(--height) / 2 );
+    --align : center;
+    --fontsize : 14px;
+    --fontfamily : 'B Titr' ;
+} 
+
+body{
+   direction: rtl;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+h1{
+    text-align: center;
+    font-family: 'B Titr' ;
+}
+.cards{
+    display: grid;
+    gap: 8px;
+    grid-template-columns:  auto auto auto auto ;
+}
+
+.card_Elevated{
+    background-color: var(--Surface);
+   font-family: B yekan,Arial, Helvetica, sans-serif;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 0px 15px 10px 15px;
+    margin: 10px;
+    
+}
+.card_Elevated:focus{
+    cursor: pointer;
+    background-color: rgb(28, 27, 31,0.88);
+    opacity: 20%;
+}
+.card_Outlined{ 
+   font-family: B yekan,Arial, Helvetica, sans-serif;
+    border: 3px solid #79747E;
+    box-shadow: #000000 ;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 0px 15px 0px 15px;
+    margin: 10px;
+}
+
+.card_Filled{
+    background-color: #E7E0EC;
+   font-family: B yekan,Arial, Helvetica, sans-serif;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: -0px 0px 15px -6px #000000;
+    padding: 0px 15px 0px 15px;
+    margin: 10px;
+}
+
+img{
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 4px;
+}
+
+.btn{
+    direction: rtl;
+    cursor: pointer;
+    height: var(--height);
+    border-radius: var(--rudios);
+    padding: var(--padding);
+    text-align: var(--align);
+    font-size: var(--fontsize);
+    font-weight: 400;
+    margin: 8px;
+    width: 100px;
+    font-family:  var(--fontfamily); ;
+    line-height: calc( var(--height) - 2px );
+    margin: max(8px, calc(48px - var(--height))) 0px 0px 16px;
+    display: inline-block;
+    vertical-align: middle;
+    align-items: normal;
+    text-decoration: none;
+    }
+    .btn.filled{
+        background-color: var(--primary);
+        color: var(--on-primary);
+        border-color: transparent;
+        
+        }
+    .btn.Outlined{
+        background-color: white;
+        color: var(--primary);
+        border-color: var(--Outline);
+            
+        }
+        .btn.filled:hover{
+            background-color: var(--primary);
+            color: var(--on-primary);
+            opacity: 92% ;
+        }
+
+        .btn.filled:focus{
+            background-color: var(--primary);
+            color: var(--on-primary);
+            opacity: 88% ;
+        }
+        .btn.filled:active{
+            background-color: var(--primary);
+            color: var(--on-primary);
+            opacity: 88% ;
+        }
