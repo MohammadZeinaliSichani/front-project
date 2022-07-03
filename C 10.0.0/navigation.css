@@ -1,0 +1,48 @@
+body{
+    direction: rtl;
+    font-family: 'B Titr';
+    background-color: rgb(231, 224, 236,0.9);
+
+
+}
+nav{
+    background-color: #FFFBFE;
+    height: 100%;
+    width: 360px;
+    border-radius: 8px;
+}
+
+i{
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    padding-top: 8px;
+    color: #1E192B;
+    padding-right: 8px;
+}
+ul{
+    padding-top: 8px;
+    padding-right:20px;
+    padding-left: 28px;
+    padding-bottom: 8px;
+    vertical-align: middle;
+    
+}
+li{
+    border-radius:calc(56px / 2 );
+    vertical-align: middle;
+    height: 56pxssss;
+    background-color: #FFFBFE;
+    padding-bottom: 8px;
+    margin: 8px;
+    list-style-type: none;
+    padding-top: 8px;
+}
+
+li:hover{
+    background-color: #E8DEF8; 
+}
+li:focus{
+    background-color: #E8DEF8; 
+
+}
